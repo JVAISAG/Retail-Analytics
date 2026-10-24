@@ -1,0 +1,5 @@
+SQL engine: SQLite 3.53.1
+{
+  "reconciliations_passed": 9,
+  "sqlite_integrity": "ok"
+}

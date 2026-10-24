@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "kind": "DOM-only functional check; no rendered-browser visual check",
+  "checks": [
+    "full-scope sales totals match SQL/Python",
+    "country and date filter match independent SQL",
+    "single-month range",
+    "reset control",
+    "tab navigation",
+    "segment counts",
+    "cohort observed vs unobserved cells",
+    "quality metadata",
+    "no external assets",
+    "no JavaScript execution errors"
+  ]
+}

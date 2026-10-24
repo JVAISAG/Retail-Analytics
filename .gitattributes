@@ -1,0 +1,16 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.sql text eol=lf
+*.json text eol=lf
+*.html text eol=lf
+*.csv text eol=lf
+*.pq text eol=lf
+*.dax text eol=lf
+*.png binary
+*.xlsx binary
+*.gz binary
+*.sqlite binary

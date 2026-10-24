@@ -1,0 +1,80 @@
+{
+  "raw_rows": 1067371,
+  "retained_rows": 1021128,
+  "excluded_rows": 46243,
+  "source_rows_by_sheet": {
+    "Year 2009-2010": 525461,
+    "Year 2010-2011": 541910
+  },
+  "source_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+  "source_url": "https://archive.ics.uci.edu/dataset/502/online+retail+ii",
+  "period_start": "2009-12-01 07:45:00",
+  "period_end": "2011-12-09 12:50:00",
+  "snapshot_date": "2011-12-10",
+  "gross_sales_gbp": 19642692.15,
+  "returns_gbp": 716425.97,
+  "net_sales_gbp": 18926266.18,
+  "orders": 39516,
+  "identified_customers": 5852,
+  "repeat_customers": 4234,
+  "repeat_customer_rate": 0.7235133287764867,
+  "average_order_value_gbp": 497.08199590039476,
+  "identified_sales_gbp": 17068567.97,
+  "unidentified_sales_gbp": 2574124.18,
+  "quality": [
+    {
+      "disposition": "duplicate",
+      "rows": 34335
+    },
+    {
+      "disposition": "non_merchandise_code",
+      "rows": 5980
+    },
+    {
+      "disposition": "nonpositive_price",
+      "rows": 5928
+    },
+    {
+      "disposition": "retained",
+      "rows": 1021128
+    }
+  ],
+  "study": {
+    "question": "Is first observed order size associated with another purchase within 90 days?",
+    "hypothesis": "H0: the two groups have equal 90-day repeat-purchase rates (two-sided).",
+    "followup_days": 90,
+    "eligible_customers": 5256,
+    "excluded_recent_customers": 596,
+    "first_order_median_gbp": 291.555,
+    "groups": [
+      {
+        "group": "Above median",
+        "customers": 2628,
+        "repeat_customers": 1383,
+        "repeat_rate": 0.526255707762557,
+        "ci_low": 0.5071412882206499,
+        "ci_high": 0.5452934811829131
+      },
+      {
+        "group": "At or below median",
+        "customers": 2628,
+        "repeat_customers": 1062,
+        "repeat_rate": 0.4041095890410959,
+        "ci_low": 0.38550119914608705,
+        "ci_high": 0.4229979039017697
+      }
+    ],
+    "difference": 0.12214611872146114,
+    "difference_ci_low": 0.09538004294085145,
+    "difference_ci_high": 0.14891219450207083,
+    "z_statistic": 8.876931245400648,
+    "p_value": 6.873025625090896e-19,
+    "alpha": 0.05,
+    "method": "Two-sided pooled two-proportion z-test; Wilson group CIs; unpooled Wald difference CI.",
+    "limitations": "Observational association; no causal effect. First observed order may not be acquisition. Country, season and wholesale mix may confound results. Same-timestamp invoices do not count as a subsequent purchase."
+  },
+  "validation": {
+    "reconciliations_passed": 9,
+    "sqlite_integrity": "ok"
+  }
+}

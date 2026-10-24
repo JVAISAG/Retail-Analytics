@@ -1,0 +1,26 @@
+[
+  {
+    "query": 1,
+    "rows_returned": 25
+  },
+  {
+    "query": 2,
+    "rows_returned": 20
+  },
+  {
+    "query": 3,
+    "rows_returned": 6
+  },
+  {
+    "query": 4,
+    "rows_returned": 312
+  },
+  {
+    "query": 5,
+    "rows_returned": 20
+  },
+  {
+    "query": 6,
+    "rows_returned": 0
+  }
+]

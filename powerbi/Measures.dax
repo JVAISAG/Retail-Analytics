@@ -1,0 +1,58 @@
+// Add each definition separately as a New measure in Power BI Desktop.
+// Import the line-level table as Ledger using Ledger.pq.
+
+Gross Sales GBP =
+DIVIDE(CALCULATE(SUM(Ledger[amount_pence]), Ledger[kind] = "sale"), 100)
+
+Returns GBP =
+-DIVIDE(CALCULATE(SUM(Ledger[amount_pence]), Ledger[kind] = "return"), 100)
+
+Net Sales GBP =
+[Gross Sales GBP] - [Returns GBP]
+
+Orders =
+CALCULATE(DISTINCTCOUNT(Ledger[invoice]), Ledger[kind] = "sale")
+
+Average Order Value GBP =
+DIVIDE([Gross Sales GBP], [Orders])
+
+Identified Buyers =
+CALCULATE(
+    DISTINCTCOUNT(Ledger[customer_id]),
+    Ledger[kind] = "sale",
+    Ledger[customer_id] <> BLANK()
+)
+
+Returns to Gross Sales =
+DIVIDE([Returns GBP], [Gross Sales GBP])
+
+// Customer-page measures use the fixed snapshot table, independent of sales-date filters.
+// Import rfm_customers.csv as Customers; keep this table disconnected for this layout.
+Snapshot Buyers =
+COUNTROWS(Customers)
+
+Snapshot Repeat Buyers =
+CALCULATE(COUNTROWS(Customers), Customers[frequency] >= 2)
+
+Snapshot Repeat Buyer Rate =
+DIVIDE([Snapshot Repeat Buyers], [Snapshot Buyers])
+
+Snapshot Gross Sales GBP =
+DIVIDE(SUM(Customers[monetary_pence]), 100)
+
+// Import cohort_retention.csv as Cohorts. Use a cohort x age matrix with totals disabled.
+Cohort Retention =
+IF(
+    HASONEVALUE(Cohorts[cohort]) && HASONEVALUE(Cohorts[age]) && MAX(Cohorts[observed]) = 1,
+    DIVIDE(MAX(Cohorts[active_customers]), MAX(Cohorts[cohort_customers])),
+    BLANK()
+)
+
+// Create the next definition as New table, not New measure.
+Calendar =
+ADDCOLUMNS(
+    CALENDAR(MIN(Ledger[order_date]), MAX(Ledger[order_date])),
+    "Year", YEAR([Date]),
+    "Month", FORMAT([Date], "yyyy-MM"),
+    "Month Sort", YEAR([Date]) * 100 + MONTH([Date])
+)

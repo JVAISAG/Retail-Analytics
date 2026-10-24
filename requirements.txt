@@ -1,0 +1,4 @@
+# Direct dependencies verified with Python 3.12.
+pandas==3.0.1
+numpy==2.3.5
+openpyxl==3.1.5
