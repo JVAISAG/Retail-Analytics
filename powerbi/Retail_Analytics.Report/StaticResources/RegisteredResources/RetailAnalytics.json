@@ -1,0 +1,31 @@
+{
+  "name": "RetailAnalytics",
+  "dataColors": [
+    "#087F8C",
+    "#3478D1",
+    "#E09F3E",
+    "#9867B5",
+    "#5BAE91",
+    "#DF6C64"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#102A43",
+  "tableAccent": "#087F8C",
+  "textClasses": {
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 12,
+      "color": "#102A43"
+    },
+    "callout": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 27,
+      "color": "#087F8C"
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 10,
+      "color": "#52677A"
+    }
+  }
+}

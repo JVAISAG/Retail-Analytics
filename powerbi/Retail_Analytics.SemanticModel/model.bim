@@ -1,0 +1,1125 @@
+{
+  "compatibilityLevel": 1606,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Ledger\",\"rfm_customers\",\"cohort_retention\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-GB",
+    "cultures": [
+      {
+        "name": "en-US"
+      },
+      {
+        "name": "en-GB",
+        "linguisticMetadata": {
+          "content": {
+            "Entities": {
+              "customers.customer_id": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Customers",
+                    "ConceptualProperty": "customer_id"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Customer ID": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "customers.frequency": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Customers",
+                    "ConceptualProperty": "frequency"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Sale orders": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "customers.monetary_gbp": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Customers",
+                    "ConceptualProperty": "monetary_gbp"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Gross purchases £": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "customers.recency_days": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Customers",
+                    "ConceptualProperty": "recency_days"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Days since purchase": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "customers.rfm_score": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Customers",
+                    "ConceptualProperty": "rfm_score"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "RFM score": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "customers.segment": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Customers",
+                    "ConceptualProperty": "segment"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Segment": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "customers.snapshot_buyers": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Customers",
+                    "ConceptualProperty": "Snapshot Buyers"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Buyers": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "customers.snapshot_gross_sales_gbp": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Customers",
+                    "ConceptualProperty": "Snapshot Gross Sales GBP"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Gross £": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "customers.snapshot_repeat_buyer_rate": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Customers",
+                    "ConceptualProperty": "Snapshot Repeat Buyer Rate"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Repeat %": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "ledger.average_order_value_gbp": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Ledger",
+                    "ConceptualProperty": "Average Order Value GBP"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "AOV £": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "ledger.gross_sales_gbp": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Ledger",
+                    "ConceptualProperty": "Gross Sales GBP"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Gross £": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "ledger.net_sales_gbp": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Ledger",
+                    "ConceptualProperty": "Net Sales GBP"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Net £": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "ledger.orders": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Ledger",
+                    "ConceptualProperty": "Orders"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Orders": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "ledger.returns_gbp": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Ledger",
+                    "ConceptualProperty": "Returns GBP"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Returns £": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "ledger.stock_code": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Ledger",
+                    "ConceptualProperty": "stock_code"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Product code": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              }
+            },
+            "Language": "en-US",
+            "Version": "2.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "ProjectRoot",
+        "expression": "\"D:\\projects\\retail-analytics\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
+        "kind": "m",
+        "lineageTag": "e8448736-0d93-45d7-8fde-3768eef957a8"
+      }
+    ],
+    "relationships": [
+      {
+        "name": "Calendar to Ledger",
+        "fromColumn": "order_date",
+        "fromTable": "Ledger",
+        "toColumn": "Date",
+        "toTable": "Calendar"
+      }
+    ],
+    "sourceQueryCulture": "en-GB",
+    "tables": [
+      {
+        "name": "Ledger",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "source_sheet",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "02601d2c-fba1-4311-a43a-cc7168d87f5a",
+            "sourceColumn": "source_sheet",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "source_row",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "503b79c1-d363-4c4a-8700-6b1b1b12d8c7",
+            "sourceColumn": "source_row",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "invoice",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "048017c5-f9fb-4578-b6d8-7be1b9202be6",
+            "sourceColumn": "invoice",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "stock_code",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "44a1e84a-9891-455f-a2b6-526bc1a76c2c",
+            "sourceColumn": "stock_code",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "description",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a39d5d4c-9ff5-4cef-8de7-4a2778de2f3f",
+            "sourceColumn": "description",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "quantity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f881052b-edc4-44c2-8eca-507c495e5142",
+            "sourceColumn": "quantity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "invoice_date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "9c9b5007-694c-4646-89dc-e3ccee625614",
+            "sourceColumn": "invoice_date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "order_date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "18d30228-fd3f-4459-be18-14c420171972",
+            "sourceColumn": "order_date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dc6c82a6-83f0-4e5b-8353-428d4d249c71",
+            "sourceColumn": "month",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "unit_price_gbp",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "ad5ed51b-1f68-4565-b917-57c41f064137",
+            "sourceColumn": "unit_price_gbp",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "amount_pence",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ce3fb599-1bf8-48db-9344-b20160a7d785",
+            "sourceColumn": "amount_pence",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "customer_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b554d52d-3515-482f-aaea-ed5f167c49cb",
+            "sourceColumn": "customer_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "country",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3ca10ab4-9af8-4f50-9da4-f9a5cb50c599",
+            "sourceColumn": "country",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "kind",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f471e7d3-62d2-4fda-aec9-b613a9e5060a",
+            "sourceColumn": "kind",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "4420d03b-31e5-4911-9f63-d22fa525ccd5",
+        "measures": [
+          {
+            "name": "Gross Sales GBP",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "Sales metrics",
+            "expression": "DIVIDE(CALCULATE(SUM(Ledger[amount_pence]),Ledger[kind]=\"sale\"),100)",
+            "formatString": "£#,0.00;(£#,0.00);£0.00",
+            "lineageTag": "10e4efb1-e784-42b2-9aa7-0e13f1e059ed"
+          },
+          {
+            "name": "Returns GBP",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "Sales metrics",
+            "expression": "-DIVIDE(CALCULATE(SUM(Ledger[amount_pence]),Ledger[kind]=\"return\"),100)",
+            "formatString": "£#,0.00;(£#,0.00);£0.00",
+            "lineageTag": "6ea88605-ddf2-4725-9dfd-f3d92e0318d1"
+          },
+          {
+            "name": "Net Sales GBP",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "Sales metrics",
+            "expression": "[Gross Sales GBP]-[Returns GBP]",
+            "formatString": "£#,0.00;(£#,0.00);£0.00",
+            "lineageTag": "20c3f3ad-793f-4056-aea5-62d4f49b39e0"
+          },
+          {
+            "name": "Orders",
+            "displayFolder": "Sales metrics",
+            "expression": "CALCULATE(DISTINCTCOUNT(Ledger[invoice]),Ledger[kind]=\"sale\")",
+            "formatString": "#,0",
+            "lineageTag": "11a77f5c-596d-4460-8a4d-459df6efa6b6"
+          },
+          {
+            "name": "Average Order Value GBP",
+            "displayFolder": "Sales metrics",
+            "expression": "DIVIDE([Gross Sales GBP],[Orders])",
+            "formatString": "£#,0.00;(£#,0.00);£0.00",
+            "lineageTag": "5128971a-fbf6-4eba-91ee-e0558bdc1356"
+          },
+          {
+            "name": "Identified Buyers",
+            "displayFolder": "Sales metrics",
+            "expression": "CALCULATE(DISTINCTCOUNT(Ledger[customer_id]),Ledger[kind]=\"sale\",Ledger[customer_id]<>BLANK())",
+            "formatString": "#,0",
+            "lineageTag": "98e64377-2433-4b59-b977-5d2f18feeff7"
+          },
+          {
+            "name": "Returns to Gross Sales",
+            "displayFolder": "Sales metrics",
+            "expression": "DIVIDE([Returns GBP],[Gross Sales GBP])",
+            "formatString": "0.0%",
+            "lineageTag": "5ab48fcf-ea20-496c-b006-d104849ef019"
+          },
+          {
+            "name": "Country Rank",
+            "displayFolder": "Sales metrics",
+            "expression": "RANKX(ALLSELECTED(Ledger[country]),[Net Sales GBP],,DESC,Dense)",
+            "formatString": "#,0",
+            "isHidden": true,
+            "lineageTag": "3c28f8c4-87c1-460e-a5e3-ba5f43327e88"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Ledger",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Binary.Decompress(",
+                "        File.Contents(ProjectRoot & \"\\data\\processed\\ledger.csv.gz\"),",
+                "        Compression.GZip",
+                "    ),",
+                "    Parsed = Csv.Document(",
+                "        Source,",
+                "        [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]",
+                "    ),",
+                "    Headers = Table.PromoteHeaders(",
+                "        Parsed,",
+                "        [PromoteAllScalars=true]",
+                "    ),",
+                "    Types = Table.TransformColumnTypes(Headers, {",
+                "        {\"source_sheet\", type text},",
+                "        {\"source_row\", Int64.Type},",
+                "        {\"invoice\", type text},",
+                "        {\"stock_code\", type text},",
+                "        {\"description\", type text},",
+                "        {\"quantity\", Int64.Type},",
+                "        {\"invoice_date\", type datetime},",
+                "        {\"order_date\", type date},",
+                "        {\"month\", type text},",
+                "        {\"unit_price_gbp\", type number},",
+                "        {\"amount_pence\", Int64.Type},",
+                "        {\"customer_id\", type text},",
+                "        {\"country\", type text},",
+                "        {\"kind\", type text}",
+                "    }, \"en-GB\"),",
+                "    MissingCustomers = Table.ReplaceValue(",
+                "        Types, \"\", null, Replacer.ReplaceValue, {\"customer_id\"}",
+                "    )",
+                "in",
+                "    MissingCustomers"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Customers",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "customer_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2fc7692c-6e3e-417b-b477-357d1094e17c",
+            "sourceColumn": "customer_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "last_purchase",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "30ff4b3d-30f0-4764-8634-03050cd01915",
+            "sourceColumn": "last_purchase",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "first_purchase",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "50ff2c63-bde4-4df2-9978-c43785016e79",
+            "sourceColumn": "first_purchase",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "frequency",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1b21d0eb-36c2-4e55-b9d6-932fb34bfc41",
+            "sourceColumn": "frequency",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "monetary_pence",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "91cdbb7d-7bea-4f1e-a04a-4ef58c1675e9",
+            "sourceColumn": "monetary_pence",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "recency_days",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "17659abc-9c97-4f6c-9f75-60a25428da03",
+            "sourceColumn": "recency_days",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "r_score",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5209c2d2-7215-4892-b853-8e11f46aa62f",
+            "sourceColumn": "r_score",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "f_score",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "60e099f6-3a12-4831-8c3b-bb67f3d14980",
+            "sourceColumn": "f_score",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "m_score",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6b52828c-6336-4494-83dc-2dc43627b9b4",
+            "sourceColumn": "m_score",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "rfm_score",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e079b0c3-c0ee-4c5f-ac9f-0fe60ea6dab0",
+            "sourceColumn": "rfm_score",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "segment",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8d6b981f-62b3-4432-9429-a95d7a8274fd",
+            "sourceColumn": "segment",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "monetary_gbp",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "£#,0.00",
+            "lineageTag": "bd6f8fe1-f987-47ba-bbbe-dc97753b101b",
+            "sourceColumn": "monetary_gbp",
+            "summarizeBy": "sum"
+          }
+        ],
+        "description": "Full-history RFM customer snapshot as at 10 December 2011. Intentionally disconnected from sales date and country slicers.",
+        "lineageTag": "e78a60db-7111-46d8-8806-490946b8008d",
+        "measures": [
+          {
+            "name": "Snapshot Buyers",
+            "displayFolder": "Snapshot metrics",
+            "expression": "COUNTROWS(Customers)",
+            "formatString": "#,0",
+            "lineageTag": "776d5886-a9a6-4ddf-a2ff-5253733b4684"
+          },
+          {
+            "name": "Snapshot Repeat Buyers",
+            "displayFolder": "Snapshot metrics",
+            "expression": "CALCULATE(COUNTROWS(Customers),Customers[frequency]>=2)",
+            "formatString": "#,0",
+            "lineageTag": "fda7027f-4b3d-419c-a775-7b7e8b58f537"
+          },
+          {
+            "name": "Snapshot Repeat Buyer Rate",
+            "displayFolder": "Snapshot metrics",
+            "expression": "DIVIDE([Snapshot Repeat Buyers],[Snapshot Buyers])",
+            "formatString": "0.0%",
+            "lineageTag": "8615bd41-bf88-43ae-a334-d33280f5a6ca"
+          },
+          {
+            "name": "Snapshot Gross Sales GBP",
+            "displayFolder": "Snapshot metrics",
+            "expression": "DIVIDE(SUM(Customers[monetary_pence]),100)",
+            "formatString": "£#,0.00;(£#,0.00);£0.00",
+            "lineageTag": "374b588a-f677-470d-8464-418767850081"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "rfm_customers",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(ProjectRoot & \"\\data\\processed\\rfm_customers.csv\"),[Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Types = Table.TransformColumnTypes(Headers, {{\"customer_id\", type text}, {\"last_purchase\", type datetime}, {\"first_purchase\", type datetime}, {\"frequency\", Int64.Type}, {\"monetary_pence\", Int64.Type}, {\"recency_days\", Int64.Type}, {\"r_score\", Int64.Type}, {\"f_score\", Int64.Type}, {\"m_score\", Int64.Type}, {\"rfm_score\", type text}, {\"segment\", type text}, {\"monetary_gbp\", type number}}, \"en-GB\")",
+                "in",
+                "    Types"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Cohorts",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "cohort",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "983efceb-d98c-4c57-89c3-fff4c22ab13e",
+            "sourceColumn": "cohort",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "age",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0eac5af3-6dcb-423f-b7bc-36da54c739a6",
+            "sourceColumn": "age",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "cohort_customers",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "43029b60-61f9-44b0-8b9f-1e5250588fd3",
+            "sourceColumn": "cohort_customers",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "active_customers",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "73dc97fb-dbfa-4085-be7b-6bce114edb74",
+            "sourceColumn": "active_customers",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "retention",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "1c7f081e-b4db-4a11-b8cb-d3d83af72759",
+            "sourceColumn": "retention",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "observed",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "82160930-0cd9-4f26-8503-812b16b47961",
+            "sourceColumn": "observed",
+            "summarizeBy": "none"
+          }
+        ],
+        "description": "Monthly first-purchase cohorts; unobserved future cells remain blank. Intentionally disconnected from sales slicers.",
+        "lineageTag": "9381e47d-ac24-409f-968e-5c10f02d0132",
+        "measures": [
+          {
+            "name": "Cohort Retention",
+            "displayFolder": "Snapshot metrics",
+            "expression": "IF(HASONEVALUE(Cohorts[cohort])&&HASONEVALUE(Cohorts[age])&&MAX(Cohorts[observed])=1,DIVIDE(MAX(Cohorts[active_customers]),MAX(Cohorts[cohort_customers])),BLANK())",
+            "formatString": "0.0%",
+            "lineageTag": "e6332bad-ccfd-485e-9c68-8f22a4451b0d"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "cohort_retention",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(ProjectRoot & \"\\data\\processed\\cohort_retention.csv\"),[Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Types = Table.TransformColumnTypes(Headers, {{\"cohort\", type text}, {\"age\", Int64.Type}, {\"cohort_customers\", Int64.Type}, {\"active_customers\", Int64.Type}, {\"retention\", type number}, {\"observed\", Int64.Type}}, \"en-GB\")",
+                "in",
+                "    Types"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Calendar",
+        "columns": [
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "formatString": "dd MMM yyyy",
+            "isKey": true,
+            "isNameInferred": false,
+            "lineageTag": "24ef644e-e14e-4aa1-b5fc-04b0f66d9af2",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "dataType": "int64",
+            "isNameInferred": false,
+            "lineageTag": "44ad58bc-1f6a-4586-95b4-9442fe1767cd",
+            "sourceColumn": "[Year]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Month",
+            "dataType": "string",
+            "isNameInferred": false,
+            "lineageTag": "71d13efc-7d8e-4ce5-a45c-0a3594c41271",
+            "sortByColumn": "Month Sort",
+            "sourceColumn": "[Month]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Month Sort",
+            "dataType": "int64",
+            "isHidden": true,
+            "isNameInferred": false,
+            "lineageTag": "7e5f4405-0171-4b87-89ff-33119a47bcd3",
+            "sourceColumn": "[Month Sort]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          }
+        ],
+        "dataCategory": "Time",
+        "lineageTag": "f5e62d16-8fbd-423b-8ab8-ad60c6826e2b",
+        "partitions": [
+          {
+            "name": "Calendar",
+            "source": {
+              "expression": "ADDCOLUMNS(CALENDAR(MIN(Ledger[order_date]),MAX(Ledger[order_date])),\"Year\",YEAR([Date]),\"Month\",FORMAT([Date],\"yyyy-MM\"),\"Month Sort\",YEAR([Date])*100+MONTH([Date]))",
+              "type": "calculated"
+            }
+          }
+        ]
+      }
+    ],
+    "valueFilterBehavior": "independent"
+  }
+}
