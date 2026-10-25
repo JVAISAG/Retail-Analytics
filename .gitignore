@@ -18,3 +18,7 @@ Thumbs.db
 /data/processed/*.sqlite
 /data/processed/*.sqlite-*
 /data/processed/ledger.csv.gz
+
+# Power BI local cache and user-specific settings
+**/.pbi/cache.abf
+**/.pbi/localSettings.json
