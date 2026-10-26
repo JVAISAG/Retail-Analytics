@@ -11,7 +11,7 @@ def main():
     required = ['README.md', 'LICENSE', 'DATA_LICENSE.md', 'requirements.txt',
                 '.gitignore', '.github/workflows/ci.yml', 'src/pipeline.py',
                 'sql/01_build.sql', 'sql/02_analysis.sql', 'tests/test_pipeline.py',
-                'scripts/run_tests.py', 'dashboard.html', 'reports/FINDINGS.md']
+                'scripts/run_tests.py', 'index.html', 'reports/FINDINGS.md']
     errors = [f'Missing required file: {p}' for p in required if not (ROOT/p).is_file()]
     result = subprocess.run(['git', '-C', str(ROOT), 'ls-files', '-z'], capture_output=True, check=False)
     if result.returncode:

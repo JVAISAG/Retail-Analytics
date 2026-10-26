@@ -20,7 +20,7 @@ The data covers December 2009 to December 2011; the final month is partial. The 
 ## Explore the completed analysis
 
 - [Findings and recommendations](reports/FINDINGS.md)
-- [Offline interactive dashboard](dashboard.html): download/open this HTML file in a browser; GitHub's repository view displays its source rather than hosting it as a live app.
+- [Offline interactive dashboard](index.html): download/open this HTML file in a browser; GitHub's repository view displays its source rather than hosting it as a live app.
 - [Excel workbook](Retail_Analytics.xlsx): summary, formulas, native charts and cohort heatmap.
 - [Methodology](docs/METHODOLOGY.md) and [data dictionary](docs/DATA_DICTIONARY.md).
 - [Validation and limitations](reports/VALIDATION.md).
@@ -85,7 +85,7 @@ data/raw/                Source workbook downloaded locally, ignored by Git
 docs/                    Methodology, dictionary, refresh and GitHub guide
 powerbi/                 Power Query, DAX, theme and build instructions
 reports/                 Findings, validation and Excel preview
-dashboard.html           Populated, offline interactive analysis
+index.html               Populated, offline interactive analysis
 Retail_Analytics.xlsx    Excel summary snapshot
 ```
 

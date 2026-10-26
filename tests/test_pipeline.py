@@ -131,7 +131,7 @@ class RealOutputTests(unittest.TestCase):
             self.assertEqual(s,g['repeat_customers'])
 
     def test_dashboard_is_offline_and_populated(self):
-        html=(ROOT/'dashboard.html').read_text(encoding='utf-8')
+        html=(ROOT/'index.html').read_text(encoding='utf-8')
         self.assertNotIn('__DATA_JSON__',html)
         self.assertNotIn('<script src=',html)
         self.assertIn(str(self.s['raw_rows']),html)

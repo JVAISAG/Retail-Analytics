@@ -34,7 +34,7 @@ If the folder is already a repository, inspect its branch and remotes before cha
 
 - README displays the Excel preview and opens the findings/methodology links.
 - Workflow runs are visible in Actions; hosted CI success is established by those runs, not by the presence of a workflow file.
-- Downloading dashboard.html and opening it locally displays the analysis; GitHub's file view shows HTML source.
+- Downloading index.html and opening it locally displays the analysis; GitHub's file view shows HTML source.
 - No database, raw workbook, environment files or project ZIP appears in the tracked file list.
 - A clean checkout can install requirements-lock.txt, run unit tests, download/rebuild the data and run full tests.
 

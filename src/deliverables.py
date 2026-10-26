@@ -69,7 +69,7 @@ Run `python src/pipeline.py` to regenerate the analysis, dashboard and report, t
     (root/'reports/FINDINGS.md').write_text(report,encoding='utf-8')
     template=(root/'src/dashboard_template.html').read_text(encoding='utf-8')
     escaped=json.dumps(data).replace('</','<\\/')
-    (root/'dashboard.html').write_text(template.replace('__DATA_JSON__',escaped),encoding='utf-8')
+    (root/'index.html').write_text(template.replace('__DATA_JSON__',escaped),encoding='utf-8')
     resume=f"""# Portfolio description and interview preparation
 
 ## Resume bullets (use after reviewing and understanding the implementation)
